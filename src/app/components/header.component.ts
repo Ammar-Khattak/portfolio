@@ -1,7 +1,7 @@
 import { Component, inject, signal, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ThemeService } from '../../services/theme.service';
-import { PortfolioService } from '../../services/portfolio.service';
+import { ThemeService } from '../services/theme.service';
+import { PortfolioService } from '../services/portfolio.service';
 
 @Component({
   selector: 'app-header',
