@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Ammar Ahmed | Senior Full Stack .NET & Angular Developer</title>
+  <meta name="description" content="Senior Full Stack Software Engineer with 6+ years of experience in .NET Core, Angular, C#, ASP.NET, ABP Boilerplate, and SQL Server. Architecting high-impact telecom, fintech, and enterprise solutions.">
+  <meta name="keywords" content="Muhammad Ammar Ahmed, .NET Core Developer, Angular Developer, Full Stack Engineer, C# Developer, Islamabad Pakistan, ABP Boilerplate, ASP.NET Core, Fintech, Telecom">
+  <meta name="author" content="Muhammad Ammar Ahmed">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Muhammad Ammar Ahmed | Senior Full Stack .NET & Angular Developer">
+  <meta property="og:description" content="Explore enterprise projects, architecture highlights, and full-stack expertise in .NET Core, Angular, and SQL Server.">
+  <meta property="og:image" content="./assets/avatar.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons for crisp UI icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glow Orbs -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast hidden" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Home">
+        <span class="logo-accent">&lt;</span>Ammar<span class="logo-accent">/&gt;</span>
+        <span class="logo-tag">.NET &bull; Angular</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Quick Resume Modal Trigger -->
+        <button id="open-resume-btn" class="btn btn-outline btn-sm">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>Resume</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="icon-btn mobile-only" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars hamburger-icon"></i>
+          <i class="fa-solid fa-xmark close-icon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for Senior & Lead Full-Stack Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Muhammad Ammar Ahmed</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Senior Full Stack .NET & Angular Engineer
+          </p>
+
+          <p class="hero-description">
+            With <strong>6+ years of specialized experience</strong>, I engineer high-performance, enterprise-grade distributed systems, fintech payment rails, and mission-critical government portals using <strong>.NET Core, ABP Boilerplate, Angular, and SQL Server</strong>.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Enterprise Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Get In Touch</span>
+            </a>
+            <button id="hero-resume-btn" class="btn btn-outline">
+              <i class="fa-solid fa-download"></i>
+              <span>Download CV</span>
+            </button>
+          </div>
+
+          <!-- Quick Contact Links -->
+          <div class="hero-quick-links">
+            <a href="mailto:ammar5508@gmail.com" class="quick-link" title="Send Email">
+              <i class="fa-solid fa-envelope"></i>
+              <span>ammar5508@gmail.com</span>
+            </a>
+            <span class="divider-dot">&bull;</span>
+            <span class="quick-link location-badge">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Islamabad, Pakistan</span>
+            </span>
+            <span class="divider-dot">&bull;</span>
+            <a href="tel:+923139890286" class="quick-link">
+              <i class="fa-solid fa-phone"></i>
+              <span>+92 313 9890286</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <div class="avatar-glow"></div>
+            <div class="avatar-img-wrap">
+              <img src="./assets/avatar.jpg" alt="Muhammad Ammar Ahmed - Full Stack .NET & Angular Engineer" class="avatar-img" width="400" height="400" loading="eager">
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-top-right">
+              <i class="fa-brands fa-angular icon-angular"></i>
+              <div>
+                <strong>Angular 17+</strong>
+                <small>Frontend Architect</small>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <i class="fa-solid fa-cubes icon-dotnet"></i>
+              <div>
+                <strong>.NET Core & C#</strong>
+                <small>High-Throughput APIs</small>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <i class="fa-solid fa-database icon-sql"></i>
+              <div>
+                <strong>SQL Server</strong>
+                <small>Optimized Procedures</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Highlights / Key Metrics Bar -->
+      <div class="metrics-bar">
+        <div class="container metrics-grid">
+          <div class="metric-item">
+            <div class="metric-number"><span class="counter" data-target="6">0</span>+</div>
+            <div class="metric-label">Years of Engineering Experience</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number"><span class="counter" data-target="5">0</span>+</div>
+            <div class="metric-label">Major Enterprise & Gov Systems</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number"><span class="counter" data-target="100">0</span>%</div>
+            <div class="metric-label">Production Delivery Record</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">Millions</div>
+            <div class="metric-label">Daily Telecom & Fintech Users</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Executive Summary</span>
+          <h2 class="section-title">Engineering Scalable, Resilient Solutions</h2>
+          <p class="section-description">A deep dive into my career objective, development philosophy, and core domain specializations.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel">
+            <div class="about-card-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3>Who I Am</h3>
+            <p>
+              I am a results-driven <strong>Senior Software Engineer</strong> based in Islamabad, Pakistan, with over 6 years of hands-on expertise in architecting, developing, and deploying robust software solutions for challenging, high-concurrency environments.
+            </p>
+            <p>
+              My track record spans developing international maritime compliance portals (such as the <em>Panama Maritime Authority</em> application handling ships traversing the Panama Canal), nationwide digital wallets and financial services (<em>Zong Paymax, Digicel Haiti</em>), and high-volume telecom admin suites (<em>Digicel Jamaica, Jazz LMS</em>).
+            </p>
+            <div class="about-highlights-list">
+              <div class="highlight-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Deep understanding of clean software architecture, SOLID principles & DDD.</span>
+              </div>
+              <div class="highlight-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Mastery over <strong>ABP Boilerplate</strong> framework for rapid enterprise modular development.</span>
+              </div>
+              <div class="highlight-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Database tuning specialist: high-speed stored procedures, indexing, and LINQ optimization.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="about-card-icon">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            <h3>Core Engineering Principles</h3>
+            <div class="principles-grid">
+              <div class="principle-box">
+                <div class="principle-header">
+                  <i class="fa-solid fa-bolt"></i>
+                  <h4>Performance & Scale</h4>
+                </div>
+                <p>Designing RESTful Web APIs and query execution paths that maintain low latency under heavy concurrent loads.</p>
+              </div>
+
+              <div class="principle-box">
+                <div class="principle-header">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <h4>Security & Compliance</h4>
+                </div>
+                <p>Applying strict maritime and financial data security standards, token-based auth, and regulatory compliance.</p>
+              </div>
+
+              <div class="principle-box">
+                <div class="principle-header">
+                  <i class="fa-solid fa-cubes-stacked"></i>
+                  <h4>Modular Architecture</h4>
+                </div>
+                <p>Decoupled multi-tier systems utilizing ABP Framework, domain-driven design, and reusable Angular components.</p>
+              </div>
+
+              <div class="principle-box">
+                <div class="principle-header">
+                  <i class="fa-solid fa-users-gear"></i>
+                  <h4>Agile Collaboration</h4>
+                </div>
+                <p>Active participation in sprint ceremonies, rigorous code reviews, mentoring, and cross-functional synergy.</p>
+              </div>
+            </div>
+
+            <!-- Quick Meta Details -->
+            <div class="about-meta-row">
+              <div class="meta-pill">
+                <span class="label">Location</span>
+                <span class="value">Islamabad, Pakistan</span>
+              </div>
+              <div class="meta-pill">
+                <span class="label">Education</span>
+                <span class="value">BS Software Engineering (IIUI)</span>
+              </div>
+              <div class="meta-pill">
+                <span class="label">Methodology</span>
+                <span class="value">Agile / Scrum & CI/CD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills & Technology Stack</h2>
+          <p class="section-description">A structured breakdown of my full-stack capabilities, frameworks, and engineering tools.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter-nav">
+          <button class="skill-tab active" data-filter="all">All Skills</button>
+          <button class="skill-tab" data-filter="backend">Backend & .NET</button>
+          <button class="skill-tab" data-filter="frontend">Frontend & Angular</button>
+          <button class="skill-tab" data-filter="database">Databases & Architecture</button>
+          <button class="skill-tab" data-filter="devops">DevOps & Methodologies</button>
+        </div>
+
+        <div class="skills-grid" id="skills-container">
+          <!-- Backend Category -->
+          <div class="skill-card glass-panel" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon dotnet-bg">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div>
+                <h4>.NET Core & C#</h4>
+                <span class="skill-level">Enterprise Expert</span>
+              </div>
+            </div>
+            <p class="skill-desc">Engineered robust Web APIs, microservices, and asynchronous background handlers with .NET 6/7/8 & ASP.NET Core.</p>
+            <div class="skill-tags">
+              <span>C#</span>
+              <span>ASP.NET Core</span>
+              <span>ASP.NET MVC</span>
+              <span>REST APIs</span>
+              <span>Web APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon abp-bg">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <div>
+                <h4>ABP Boilerplate & Microservices</h4>
+                <span class="skill-level">Production Proven</span>
+              </div>
+            </div>
+            <p class="skill-desc">Harnessing ABP Framework for multi-tenant, DDD-based enterprise web platforms and domain event orchestration.</p>
+            <div class="skill-tags">
+              <span>ABP Framework</span>
+              <span>Domain Driven Design</span>
+              <span>Microservices</span>
+              <span>Multi-Tenancy</span>
+            </div>
+          </div>
+
+          <!-- Frontend Category -->
+          <div class="skill-card glass-panel" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon angular-bg">
+                <i class="fa-brands fa-angular"></i>
+              </div>
+              <div>
+                <h4>Angular Framework</h4>
+                <span class="skill-level">Senior Specialist</span>
+              </div>
+            </div>
+            <p class="skill-desc">Architecting modular Single Page Applications (SPAs), reactive state management, custom directives, and interceptors.</p>
+            <div class="skill-tags">
+              <span>Angular (v8-17)</span>
+              <span>TypeScript</span>
+              <span>Angular Material</span>
+              <span>RxJS</span>
+              <span>SPAs</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon ui-bg">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div>
+                <h4>Modern Web UI & UX</h4>
+                <span class="skill-level">Responsive & Accessible</span>
+              </div>
+            </div>
+            <p class="skill-desc">Crafting responsive, intuitive, and accessible user interfaces and interactive dashboards for telecom and fintech admins.</p>
+            <div class="skill-tags">
+              <span>HTML5</span>
+              <span>CSS3 / SCSS</span>
+              <span>JavaScript (ES6+)</span>
+              <span>Flexbox / CSS Grid</span>
+            </div>
+          </div>
+
+          <!-- Database Category -->
+          <div class="skill-card glass-panel" data-category="database">
+            <div class="skill-header">
+              <div class="skill-icon sql-bg">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div>
+                <h4>Microsoft SQL Server</h4>
+                <span class="skill-level">Advanced Query Tuning</span>
+              </div>
+            </div>
+            <p class="skill-desc">Optimizing relational database interactions, complex stored procedures, triggers, views, and index performance.</p>
+            <div class="skill-tags">
+              <span>MS SQL Server</span>
+              <span>Stored Procedures</span>
+              <span>Query Optimization</span>
+              <span>Data Modeling</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="database">
+            <div class="skill-header">
+              <div class="skill-icon orm-bg">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div>
+                <h4>Entity Framework & LINQ</h4>
+                <span class="skill-level">ORM Master</span>
+              </div>
+            </div>
+            <p class="skill-desc">Writing performant LINQ queries, code-first migrations, projection queries, and transactional integrity guarantees.</p>
+            <div class="skill-tags">
+              <span>EF Core</span>
+              <span>LINQ</span>
+              <span>Repository Pattern</span>
+              <span>Unit of Work</span>
+            </div>
+          </div>
+
+          <!-- DevOps & Process Category -->
+          <div class="skill-card glass-panel" data-category="devops">
+            <div class="skill-header">
+              <div class="skill-icon devops-bg">
+                <i class="fa-brands fa-microsoft"></i>
+              </div>
+              <div>
+                <h4>Azure DevOps & CI/CD</h4>
+                <span class="skill-level">Production Operations</span>
+              </div>
+            </div>
+            <p class="skill-desc">Managing work items, automated build/release pipelines, continuous integration, and version control workflows.</p>
+            <div class="skill-tags">
+              <span>Azure DevOps</span>
+              <span>Git & GitHub</span>
+              <span>CI/CD</span>
+              <span>Board Management</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="devops">
+            <div class="skill-header">
+              <div class="skill-icon agile-bg">
+                <i class="fa-solid fa-list-check"></i>
+              </div>
+              <div>
+                <h4>Agile Delivery & Code Quality</h4>
+                <span class="skill-level">Leadership & Mentorship</span>
+              </div>
+            </div>
+            <p class="skill-desc">Driving Scrum ceremonies, rigorous code reviews, automated unit testing, debugging, and continuous team mentoring.</p>
+            <div class="skill-tags">
+              <span>Scrum & Agile</span>
+              <span>Code Reviews</span>
+              <span>Debugging</span>
+              <span>Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SHOWCASE -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio of Work</span>
+          <h2 class="section-title">Enterprise & High-Impact Projects</h2>
+          <p class="section-description">Proven delivery across international maritime regulations, digital wallets, and nationwide telecom infrastructures.</p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="projects-filter-bar">
+          <button class="project-filter-btn active" data-filter="all">All Projects (5)</button>
+          <button class="project-filter-btn" data-filter="maritime">Maritime & Gov</button>
+          <button class="project-filter-btn" data-filter="fintech">Fintech & Payments</button>
+          <button class="project-filter-btn" data-filter="telecom">Telecom & Enterprise</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: AMP (Panama Maritime Authority) -->
+          <article class="project-card glass-panel" data-category="maritime">
+            <div class="project-badge maritime">
+              <i class="fa-solid fa-ship"></i>
+              <span>Maritime & Gov</span>
+            </div>
+            <div class="project-body">
+              <span class="project-org">CROEM &bull; Panama Canal Ecosystem</span>
+              <h3 class="project-title">AMP — Panama Maritime Authority Certification System</h3>
+              <p class="project-summary">
+                A mission-critical enterprise portal built using ABP Boilerplate, .NET Core, and Angular. Empowers international maritime agents to seamlessly apply for, process, and obtain vessel certificates needed to transit through the world-famous Panama Canal.
+              </p>
+
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Streamlines global maritime vessel certification workflow</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Ensures international maritime safety & regulatory compliance</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Secure portal for instant document download & agent verification</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">ABP Boilerplate</span>
+                <span class="tech-pill">.NET Core</span>
+                <span class="tech-pill">Angular</span>
+                <span class="tech-pill">SQL Server</span>
+                <span class="tech-pill">REST APIs</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <button class="btn btn-sm btn-outline project-modal-trigger" data-project="amp">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>System Architecture Details</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Digicel Haiti -->
+          <article class="project-card glass-panel" data-category="fintech">
+            <div class="project-badge fintech">
+              <i class="fa-solid fa-wallet"></i>
+              <span>Fintech & Wallet</span>
+            </div>
+            <div class="project-body">
+              <span class="project-org">AKSA-SDS &bull; West Indies Financial Ecosystem</span>
+              <h3 class="project-title">Digicel Haiti — Mobile Financial Services & Digital Wallet</h3>
+              <p class="project-summary">
+                Contributed to the development and enhancement of the digital wallet & mobile financial service (MFS) admin portal for Digicel Haiti, enabling seamless electronic transactions, money transfers, and merchant payments across the West Indies.
+              </p>
+
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Engineered responsive, highly accessible Angular admin interface</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Built high-throughput .NET Core Web APIs for transactional feeds</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Optimized SQL stored procedures for rapid financial data retrieval</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Angular</span>
+                <span class="tech-pill">.NET Core</span>
+                <span class="tech-pill">C#</span>
+                <span class="tech-pill">Stored Procedures</span>
+                <span class="tech-pill">Fintech APIs</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <button class="btn btn-sm btn-outline project-modal-trigger" data-project="digicel-haiti">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>System Architecture Details</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Digicel Jamaica -->
+          <article class="project-card glass-panel" data-category="telecom">
+            <div class="project-badge telecom">
+              <i class="fa-solid fa-tower-cell"></i>
+              <span>Telecom Operations</span>
+            </div>
+            <div class="project-body">
+              <span class="project-org">AKSA-SDS &bull; Caribbean Telecom Leader</span>
+              <h3 class="project-title">Digicel Jamaica — Core Operations Admin Suite</h3>
+              <p class="project-summary">
+                Key role in engineering the enterprise Admin Panel for Digicel Jamaica, the leading telecommunications network provider. Designed user-friendly frontends and robust backend interfaces to manage subscriber services and network operations.
+              </p>
+
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Crafted intuitive Angular dashboards for high accessibility</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Developed performant Web APIs connecting telecom middleware</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Executed high-efficiency database queries for subscriber analytics</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Angular</span>
+                <span class="tech-pill">.NET Core</span>
+                <span class="tech-pill">Web APIs</span>
+                <span class="tech-pill">SQL Optimization</span>
+                <span class="tech-pill">TypeScript</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <button class="btn btn-sm btn-outline project-modal-trigger" data-project="digicel-jamaica">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>System Architecture Details</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Zong Paymax -->
+          <article class="project-card glass-panel" data-category="fintech">
+            <div class="project-badge fintech">
+              <i class="fa-solid fa-money-bill-transfer"></i>
+              <span>Fintech & Payments</span>
+            </div>
+            <div class="project-body">
+              <span class="project-org">AKSA-SDS &bull; China Mobile Pakistan (Zong)</span>
+              <h3 class="project-title">Zong Paymax — Mobile Financial Services Portal</h3>
+              <p class="project-summary">
+                Developed the mission-critical Admin Panel for Paymax, the branchless banking and digital payments platform powered by Zong (China Mobile Pakistan), facilitating secure, high-concurrency electronic payments for millions of users.
+              </p>
+
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Frontend implementation with Angular and reactive components</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Built secure REST APIs connecting payment processing gateways</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>High-performance stored procedures handling payment reconciliation</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Angular</span>
+                <span class="tech-pill">ASP.NET Core</span>
+                <span class="tech-pill">C#</span>
+                <span class="tech-pill">MS SQL Server</span>
+                <span class="tech-pill">Stored Procedures</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <button class="btn btn-sm btn-outline project-modal-trigger" data-project="paymax">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>System Architecture Details</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: Jazz LMS -->
+          <article class="project-card glass-panel" data-category="telecom">
+            <div class="project-badge telecom">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Telecom LMS</span>
+            </div>
+            <div class="project-body">
+              <span class="project-org">AKSA-SDS &bull; VEON Group (Jazz)</span>
+              <h3 class="project-title">Jazz LMS — Enterprise Learning Management Portal</h3>
+              <p class="project-summary">
+                Built the administrative engine for Jazz LMS, supporting nationwide telecom employee training, corporate compliance modules, and interactive certifications across Pakistan's largest telecom provider.
+              </p>
+
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Modernized administrative portal using Angular 8 UI</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Engineered .NET Core 3.1 Web APIs for curriculum delivery</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Streamlined employee course tracking & reporting analytics</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Angular 8</span>
+                <span class="tech-pill">.NET Core 3.1</span>
+                <span class="tech-pill">SQL Server</span>
+                <span class="tech-pill">SPA Design</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <button class="btn btn-sm btn-outline project-modal-trigger" data-project="jazz-lms">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>System Architecture Details</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER EXPERIENCE TIMELINE SECTION -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Milestones</span>
+          <h2 class="section-title">Work Experience & Education</h2>
+          <p class="section-description">A progression of senior leadership, enterprise deliveries, and engineering excellence.</p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- TIMELINE ITEM 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date-badge">September 2023 – Present</div>
+              <h3 class="timeline-role">Sr. Software Engineer (.NET Core & Angular)</h3>
+              <h4 class="timeline-company">CROEM &bull; Islamabad, Pakistan</h4>
+              <p class="timeline-summary">
+                Leading the engineering of international enterprise systems, notably the <strong>Panama Maritime Authority (AMP)</strong> platform.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Architected and developed modular enterprise features using <strong>ABP Boilerplate, .NET Core, and Angular</strong>.</li>
+                <li>Enabled maritime agents worldwide to apply for, track, and download official certificates required for Panama Canal passage.</li>
+                <li>Streamlined the entire vessel certification pipeline, cutting processing delays and enforcing strict international maritime protocols.</li>
+                <li>Spearheaded code reviews, architectural standards, and automated deployment practices.</li>
+              </ul>
+              <div class="timeline-tech">
+                <span>ABP Boilerplate</span>
+                <span>.NET Core</span>
+                <span>Angular</span>
+                <span>MS SQL Server</span>
+                <span>Entity Framework</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TIMELINE ITEM 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-code-branch"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date-badge">December 2022 – September 2023</div>
+              <h3 class="timeline-role">Software Engineer (.NET Core & Angular)</h3>
+              <h4 class="timeline-company">AKSA-SDS &bull; Islamabad, Pakistan</h4>
+              <p class="timeline-summary">
+                Delivered large-scale admin panels and transactional microservices for international telecom and digital banking giants.
+              </p>
+              <ul class="timeline-bullets">
+                <li><strong>Digicel Haiti:</strong> Enhanced the digital wallet admin portal using Angular and .NET Core; developed secure REST Web APIs and tuned stored procedures for financial transactions.</li>
+                <li><strong>Digicel Jamaica:</strong> Key contributor to the administrative portal for Jamaica's foremost telecom operator; improved interface usability, responsiveness, and database query efficiency.</li>
+                <li>Collaborated closely with multi-disciplinary, cross-functional squads to ensure alignment with fast-paced business requirements.</li>
+              </ul>
+              <div class="timeline-tech">
+                <span>.NET Core</span>
+                <span>Angular</span>
+                <span>C#</span>
+                <span>Stored Procedures</span>
+                <span>REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TIMELINE ITEM 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-terminal"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date-badge">March 2021 – November 2022</div>
+              <h3 class="timeline-role">Jr. Software Engineer (.NET Core & Angular)</h3>
+              <h4 class="timeline-company">AKSA-SDS &bull; Islamabad, Pakistan</h4>
+              <p class="timeline-summary">
+                Engineered core modules for nationwide digital financial services and corporate learning management systems.
+              </p>
+              <ul class="timeline-bullets">
+                <li><strong>Zong Paymax:</strong> Designed and implemented admin panel workflows for mobile payments; developed .NET Core Web APIs and SQL stored procedures for transaction management.</li>
+                <li><strong>Jazz LMS:</strong> Built intuitive frontend features using Angular 8 and integrated backend APIs via .NET Core 3.1.</li>
+                <li>Maintained high code quality and participated in rigorous bug triage and resolution cycles.</li>
+              </ul>
+              <div class="timeline-tech">
+                <span>.NET Core 3.1</span>
+                <span>Angular 8</span>
+                <span>SQL Server</span>
+                <span>ASP.NET Web APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TIMELINE ITEM 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date-badge">December 2020 – March 2021</div>
+              <h3 class="timeline-role">Software Engineering Intern</h3>
+              <h4 class="timeline-company">AKSA-SDS &bull; Islamabad, Pakistan</h4>
+              <p class="timeline-summary">
+                Gained intensive professional experience building enterprise Single Page Applications (SPAs) integrating Angular 8 with ASP.NET Core and SQL Server.
+              </p>
+              <div class="timeline-tech">
+                <span>ASP.NET MVC</span>
+                <span>ASP.NET Core</span>
+                <span>Angular 8</span>
+                <span>SQL Server</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TIMELINE ITEM 5: EDUCATION -->
+          <div class="timeline-item education-marker">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date-badge">2016 – 2020</div>
+              <h3 class="timeline-role">Bachelor of Science in Software Engineering</h3>
+              <h4 class="timeline-company">International Islamic University &bull; Islamabad, Pakistan</h4>
+              <p class="timeline-summary">
+                Comprehensive degree curriculum covering Software Design & Architecture, Data Structures & Algorithms, Object-Oriented Analysis, Relational Database Management Systems, and Web Application Frameworks.
+              </p>
+              <div class="timeline-tech">
+                <span>Data Structures</span>
+                <span>Algorithms</span>
+                <span>OOP</span>
+                <span>Database Design</span>
+                <span>Software Architecture</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & HIRE SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch & Collaborate</h2>
+          <p class="section-description">Interested in discussing a project, team leadership, or senior full-stack opportunities? Reach out anytime.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info">
+            <div class="contact-card glass-panel">
+              <div class="contact-icon email-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email Address</h4>
+                <p>ammar5508@gmail.com</p>
+                <button class="copy-btn" id="copy-email-btn" title="Copy to clipboard">
+                  <i class="fa-regular fa-copy"></i>
+                  <span>Copy Email</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-card glass-panel">
+              <div class="contact-icon phone-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone Number</h4>
+                <p>+92 313 9890286</p>
+                <a href="tel:+923139890286" class="contact-action-link">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <span>Call Directly</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-card glass-panel">
+              <div class="contact-icon location-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Islamabad, Pakistan</p>
+                <span class="location-status"><i class="fa-solid fa-earth-asia"></i> Open to Remote & Hybrid Roles</span>
+              </div>
+            </div>
+
+            <div class="contact-card glass-panel">
+              <div class="contact-icon linkedin-icon">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Professional Network</h4>
+                <p>LinkedIn Profile</p>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-action-link">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>Visit Profile</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form (Netlify Form Ready!) -->
+          <div class="contact-form-wrap glass-panel">
+            <h3>Send a Direct Message</h3>
+            <p class="form-lead">Feel free to leave a note or inquire about my availability.</p>
+
+            <form id="contact-form" name="portfolio-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <!-- Netlify anti-bot hidden field -->
+              <input type="hidden" name="form-name" value="portfolio-contact">
+              <p class="hidden" style="display:none;">
+                <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+              </p>
+
+              <div class="form-group">
+                <label for="contact-name">Your Full Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" id="contact-name" name="name" placeholder="e.g. John Doe" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" id="contact-email" name="email" placeholder="e.g. john@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-bookmark"></i>
+                  <input type="text" id="contact-subject" name="subject" placeholder="e.g. Senior .NET / Angular Opportunity">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Your Message <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-comment-dots"></i>
+                  <textarea id="contact-message" name="message" rows="4" placeholder="Hello Ammar, I would love to connect regarding..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                <i class="fa-regular fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+
+              <div id="form-status" class="form-status-msg" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-accent">&lt;</span>Ammar<span class="logo-accent">/&gt;</span>
+        </a>
+        <p class="footer-desc">
+          Crafting resilient, scalable enterprise architectures with .NET Core & Angular.
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <ul class="footer-nav">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-badge">
+          <i class="fa-solid fa-shield-heart"></i>
+          <span>Built for High Performance</span>
+        </div>
+        <p class="copyright">
+          &copy; <span id="current-year">2026</span> Muhammad Ammar Ahmed. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div id="project-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-container glass-panel">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-content" id="modal-project-content">
+        <!-- Content injected dynamically via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUME PREVIEW & PRINT MODAL -->
+  <div id="resume-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="resume-title">
+    <div class="modal-container resume-modal-container glass-panel">
+      <div class="resume-modal-header">
+        <h3 id="resume-title">Resume Preview — Muhammad Ammar Ahmed</h3>
+        <div class="resume-actions">
+          <button id="print-resume-btn" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-print"></i>
+            <span>Print / Save as PDF</span>
+          </button>
+          <button class="modal-close-btn" id="resume-close-btn" aria-label="Close resume modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="resume-sheet" id="printable-resume">
+        <header class="resume-sheet-header">
+          <h2>Muhammad Ammar Ahmed</h2>
+          <p class="resume-sheet-role">Full Stack Dot Net & Angular Developer</p>
+          <div class="resume-sheet-contacts">
+            <span><i class="fa-solid fa-phone"></i> +923139890286</span>
+            <span><i class="fa-solid fa-envelope"></i> ammar5508@gmail.com</span>
+            <span><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</span>
+          </div>
+        </header>
+
+        <section class="resume-sheet-section">
+          <h3>Career Objective</h3>
+          <p>
+            Software Engineer with over 6 years of experience in designing, developing, and deploying robust software solutions for challenging and complex problems. Demonstrated success in leading and contributing to high-impact projects through self-direction and a deep understanding of software engineering principles. Strong background in problem-solving, algorithm design, and optimizing code for performance and scalability. Skilled in collaborating with cross-functional teams to deliver innovative solutions that meet business objectives.
+          </p>
+        </section>
+
+        <section class="resume-sheet-section">
+          <h3>Professional Experience</h3>
+
+          <div class="resume-job">
+            <div class="resume-job-head">
+              <strong>Sr. Software Engineer (.NET Core & Angular)</strong>
+              <span>Sep 2023 – Present</span>
+            </div>
+            <div class="resume-job-company">CROEM &bull; Islamabad, Pakistan</div>
+            <p><strong>Project: AMP (Panama Maritime Authority)</strong></p>
+            <ul>
+              <li>Developed using ABP boilerplate, .NET Core, and Angular.</li>
+              <li>Enables maritime agents worldwide to apply for essential certificates required for ships transiting the Panama Canal.</li>
+              <li>Streamlines the certification process, drastically boosting operational efficiency and regulatory compliance.</li>
+              <li>Engineered intuitive user application access and document retrieval workflows.</li>
+            </ul>
+          </div>
+
+          <div class="resume-job">
+            <div class="resume-job-head">
+              <strong>Software Engineer (.NET Core & Angular)</strong>
+              <span>Dec 2022 – Sep 2023</span>
+            </div>
+            <div class="resume-job-company">AKSA-SDS &bull; Islamabad, Pakistan</div>
+            <p><strong>Project: Digicel Haiti (Digital Wallet & MFS)</strong></p>
+            <ul>
+              <li>Enhanced the Admin Panel for Haiti using Angular and .NET Core with a responsive and intuitive UI.</li>
+              <li>Built Web APIs with .NET Core for secure, efficient frontend-to-backend communication.</li>
+              <li>Wrote and optimized complex SQL stored procedures for financial data handling.</li>
+            </ul>
+            <p><strong>Project: Digicel Jamaica (Telecom Admin Panel)</strong></p>
+            <ul>
+              <li>Played a key role in developing the Admin Panel for Jamaica's leading telecom network.</li>
+              <li>Designed and built frontend modules in Angular and integrated high-speed .NET Core APIs.</li>
+            </ul>
+          </div>
+
+          <div class="resume-job">
+            <div class="resume-job-head">
+              <strong>Jr. Software Engineer (.NET Core & Angular)</strong>
+              <span>Mar 2021 – Nov 2022</span>
+            </div>
+            <div class="resume-job-company">AKSA-SDS &bull; Islamabad, Pakistan</div>
+            <p><strong>Project: Zong Paymax</strong></p>
+            <ul>
+              <li>Contributed to the Admin Panel for Paymax, enabling secure, convenient digital payments.</li>
+              <li>Implemented Angular views and .NET Core Web APIs connected via stored procedures.</li>
+            </ul>
+            <p><strong>Project: Jazz LMS</strong></p>
+            <ul>
+              <li>Helped build the frontend using Angular 8 and connected backend services via .NET Core 3.1.</li>
+            </ul>
+          </div>
+
+          <div class="resume-job">
+            <div class="resume-job-head">
+              <strong>Intern (.NET Core & Angular)</strong>
+              <span>Dec 2020 – Mar 2021</span>
+            </div>
+            <div class="resume-job-company">AKSA-SDS &bull; Islamabad, Pakistan</div>
+            <ul>
+              <li>Gained hands-on experience in ASP.NET MVC and ASP.NET Core Web APIs.</li>
+              <li>Created Single Page Applications (SPAs) with Angular 8 and SQL Server.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="resume-sheet-section">
+          <h3>Technical Skills</h3>
+          <div class="resume-skills-list">
+            <p><strong>Backend:</strong> ASP.NET Core, .NET Framework, C#, ASP.NET MVC, Entity Framework Core, LINQ, Microservices, ABP Boilerplate, REST APIs.</p>
+            <p><strong>Frontend:</strong> Angular, TypeScript, Angular Material, Single Page Applications (SPAs), HTML5, CSS3, JavaScript.</p>
+            <p><strong>Databases:</strong> Microsoft SQL Server, Stored Procedures, Database Tuning, Query Optimization.</p>
+            <p><strong>DevOps & Methods:</strong> Azure DevOps, Git, Agile / Scrum, Code Reviews, Debugging, CI/CD.</p>
+          </div>
+        </section>
+
+        <section class="resume-sheet-section">
+          <h3>Education</h3>
+          <div class="resume-job">
+            <div class="resume-job-head">
+              <strong>Bachelor of Science in Software Engineering</strong>
+              <span>2016 – 2020</span>
+            </div>
+            <div class="resume-job-company">International Islamic University &bull; Islamabad, Pakistan</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button id="back-to-top" class="back-to-top hidden" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
