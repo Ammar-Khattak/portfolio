@@ -65,6 +65,7 @@ import { PortfolioService } from '../services/portfolio.service';
         <div class="hero-visual">
           <div class="avatar-card">
             <div class="avatar-glow"></div>
+            <div class="avatar-orbit-ring"></div>
             <div class="avatar-img-wrap">
               <img src="assets/avatar.jpg" [alt]="portfolioService.developerName()" class="avatar-img" width="400" height="400" loading="eager">
             </div>
@@ -73,7 +74,7 @@ import { PortfolioService } from '../services/portfolio.service';
             <div class="floating-badge badge-top-right">
               <i class="fa-brands fa-angular icon-angular"></i>
               <div>
-                <strong>Angular 17+</strong>
+                <strong>Angular 8+</strong>
                 <small>Frontend Architect</small>
               </div>
             </div>

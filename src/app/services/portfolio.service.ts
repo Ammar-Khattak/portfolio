@@ -185,7 +185,7 @@ export class PortfolioService {
       category: 'frontend',
       level: 'Senior Specialist',
       description: 'Architecting modular Single Page Applications (SPAs), reactive state management, custom directives, and interceptors.',
-      tags: ['Angular (v8-17)', 'TypeScript', 'Angular Material', 'RxJS', 'Signals'],
+      tags: ['Angular (v8+)', 'TypeScript', 'Angular Material', 'RxJS', 'Signals'],
       icon: 'fa-brands fa-angular',
       bgClass: 'angular-bg'
     },

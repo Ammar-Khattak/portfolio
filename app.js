@@ -411,4 +411,22 @@ document.addEventListener('DOMContentLoaded', () => {
   if (yearElem) {
     yearElem.textContent = new Date().getFullYear();
   }
+
+  // --- 12. INTERACTIVE 3D TILT ON HERO AVATAR ---
+  const avatarCard = document.getElementById('avatarCard');
+  const heroVisual = document.querySelector('.hero-visual');
+  if (avatarCard && heroVisual) {
+    heroVisual.addEventListener('mousemove', (e) => {
+      const rect = avatarCard.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      const rotateX = -(y / (rect.height / 2)) * 10;
+      const rotateY = (x / (rect.width / 2)) * 10;
+      avatarCard.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-8px)`;
+    });
+
+    heroVisual.addEventListener('mouseleave', () => {
+      avatarCard.style.transform = '';
+    });
+  }
 });

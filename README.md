@@ -2,13 +2,13 @@
 
 A modern, high-performance, responsive portfolio web application engineered for **Muhammad Ammar Ahmed**, Senior Full Stack .NET & Angular Developer.
 
-Built with **Angular 17+ Standalone Architecture**, **TypeScript**, **Angular Signals**, and a **Glassmorphism Design System** featuring dynamic neon accents, dark & light themes, interactive project modals, and an ATS-friendly printable resume.
+Built with **Angular 8+ & Modern Architecture**, **TypeScript**, **Angular Signals**, and a **Glassmorphism Design System** featuring dynamic neon accents, dark & light themes, interactive project modals, and an ATS-friendly printable resume.
 
 ---
 
 ## 🚀 Key Features
 
-* **Angular 17+ Standalone Architecture**: No `NgModules` — clean standalone components, reactive signals (`signal()`, `computed()`), and strongly-typed models.
+* **Angular 8+ & Modern Standalone Architecture**: Clean components, reactive architecture, and strongly-typed models showcasing 6+ years of specialized Angular expertise.
 * **Modern Aesthetic**: Glassmorphism cards, ambient animated neon gradients, dark/light theme toggle with `localStorage` persistence.
 * **Featured Enterprise Projects**:
   * **AMP (Panama Maritime Authority)**: International vessel certification portal built with ABP Boilerplate, .NET Core, and Angular.

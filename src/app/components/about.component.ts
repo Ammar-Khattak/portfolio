@@ -22,7 +22,7 @@ import { PortfolioService } from '../services/portfolio.service';
             </div>
             <h3>Who I Am</h3>
             <p>
-              I am a results-driven <strong>Senior Software Engineer</strong> based in Islamabad, Pakistan, with over 6 years of hands-on expertise in architecting, developing, and deploying robust software solutions for challenging, high-concurrency environments.
+              I am <strong>Muhammad Ammar Ahmed</strong>, a results-driven <strong>Senior Software Engineer</strong> based in Islamabad, Pakistan, with over 6 years of hands-on expertise in architecting, developing, and deploying robust software solutions for challenging, high-concurrency environments.
             </p>
             <p>
               My track record spans developing international maritime compliance portals (such as the <em>Panama Maritime Authority</em> application handling ships traversing the Panama Canal), nationwide digital wallets and financial services (<em>Zong Paymax, Digicel Haiti</em>), and high-volume telecom admin suites (<em>Digicel Jamaica, Jazz LMS</em>).

@@ -11,7 +11,7 @@ import { PortfolioService } from '../services/portfolio.service';
       <div class="container footer-content">
         <div class="footer-left">
           <a href="#hero" class="brand-logo footer-logo">
-            <span class="logo-accent">&lt;</span>Ammar<span class="logo-accent">/&gt;</span>
+            <span class="logo-accent">&lt;</span>Muhammad Ammar Ahmed<span class="logo-accent">/&gt;</span>
           </a>
           <p class="footer-desc">
             Crafting resilient, scalable enterprise architectures with .NET Core & Angular.
@@ -32,7 +32,7 @@ import { PortfolioService } from '../services/portfolio.service';
         <div class="footer-right">
           <div class="footer-badge">
             <i class="fa-solid fa-shield-heart"></i>
-            <span>Built with Angular 17+ & TypeScript</span>
+            <span>Built with Angular 8+ & TypeScript</span>
           </div>
           <p class="copyright">
             &copy; {{ currentYear }} {{ portfolioService.developerName() }}. All rights reserved.

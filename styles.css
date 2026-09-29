@@ -373,9 +373,10 @@ button {
   align-items: center;
   gap: 8px;
   font-family: var(--font-heading);
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: -0.5px;
+  white-space: nowrap;
 }
 .logo-accent {
   color: var(--accent-cyan);
@@ -544,28 +545,73 @@ button {
   display: flex;
   justify-content: center;
   position: relative;
+  perspective: 1000px;
 }
 
 .avatar-card {
   position: relative;
   width: 380px;
   height: 380px;
+  animation: avatarFloat 6s ease-in-out infinite alternate;
+  transform-style: preserve-3d;
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes avatarFloat {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0.6deg);
+  }
+  100% {
+    transform: translateY(-18px) rotate(-0.6deg);
+  }
 }
 
 .avatar-glow {
   position: absolute;
-  inset: -10px;
-  background: var(--grad-primary);
-  border-radius: 36px;
+  inset: -14px;
+  background: conic-gradient(from 0deg at 50% 50%, rgba(56, 189, 248, 0.7), rgba(99, 102, 241, 0.6), rgba(236, 72, 153, 0.6), rgba(56, 189, 248, 0.7));
+  border-radius: 40px;
   filter: blur(28px);
-  opacity: 0.45;
+  opacity: 0.55;
   z-index: 0;
-  animation: pulseGlow 6s ease-in-out infinite alternate;
+  animation: pulseGlow 8s ease-in-out infinite alternate;
 }
 
 @keyframes pulseGlow {
-  0% { opacity: 0.35; transform: scale(0.98); }
-  100% { opacity: 0.6; transform: scale(1.02); }
+  0% {
+    opacity: 0.45;
+    transform: scale(0.96) rotate(0deg);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.05) rotate(180deg);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(0.98) rotate(360deg);
+  }
+}
+
+.avatar-orbit-ring {
+  position: absolute;
+  inset: -16px;
+  border-radius: 44px;
+  border: 1.5px dashed rgba(56, 189, 248, 0.35);
+  pointer-events: none;
+  z-index: 0;
+  animation: orbitRotate 22s linear infinite;
+}
+
+@keyframes orbitRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .avatar-img-wrap {
@@ -574,19 +620,59 @@ button {
   height: 100%;
   border-radius: 32px;
   overflow: hidden;
-  border: 2px solid rgba(255, 255, 255, 0.15);
-  box-shadow: var(--shadow-lg);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 30px rgba(56, 189, 248, 0.25);
   z-index: 1;
+}
+
+.avatar-img-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid transparent;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.8), rgba(129, 140, 248, 0.8), rgba(236, 72, 153, 0.8), rgba(56, 189, 248, 0.8)) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  background-size: 300% 300%;
+  animation: borderGradient 6s ease infinite;
+}
+
+@keyframes borderGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .avatar-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform var(--transition-smooth);
+  object-position: center 15%;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.6s ease;
+  animation: avatarBreathe 6s ease-in-out infinite alternate;
 }
+
+@keyframes avatarBreathe {
+  0% {
+    transform: scale(1);
+    filter: brightness(1) contrast(1.02);
+  }
+  50% {
+    transform: scale(1.035) translateY(-3px);
+    filter: brightness(1.03) contrast(1.05);
+  }
+  100% {
+    transform: scale(1.01) translateY(-1px);
+    filter: brightness(1) contrast(1.02);
+  }
+}
+
 .avatar-card:hover .avatar-img {
-  transform: scale(1.03);
+  transform: scale(1.08);
+  filter: brightness(1.05) contrast(1.08);
 }
 
 .floating-badge {
@@ -1653,6 +1739,9 @@ button {
 }
 
 @media (max-width: 768px) {
+  .brand-logo {
+    font-size: 1.05rem;
+  }
   .mobile-only {
     display: flex;
   }
@@ -1705,6 +1794,15 @@ button {
   }
   .timeline-item {
     gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logo {
+    font-size: 0.92rem;
+  }
+  .logo-tag {
+    display: none;
   }
 }
 

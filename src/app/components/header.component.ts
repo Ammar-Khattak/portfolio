@@ -11,7 +11,7 @@ import { PortfolioService } from '../services/portfolio.service';
     <header class="site-header" [class.scrolled]="isScrolled()">
       <div class="container header-container">
         <a href="#hero" class="brand-logo" aria-label="Home">
-          <span class="logo-accent">&lt;</span>Ammar<span class="logo-accent">/&gt;</span>
+          <span class="logo-accent">&lt;</span>Muhammad Ammar Ahmed<span class="logo-accent">/&gt;</span>
           <span class="logo-tag">.NET &bull; Angular</span>
         </a>
 
